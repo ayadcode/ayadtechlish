@@ -80,10 +80,6 @@
         }
       }
     </style>
-    <script
-      type="module"
-      src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fayadtechli2927back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"
-    ></script>
   </head>
   <body>
     <div class="loader-container">
@@ -96,13 +92,13 @@
     <script>
       // Redirect to landing page after 2 seconds
       setTimeout(function () {
-        window.location.href = "pages/landing_page.html";
+        window.location.href = "pages/course";
       }, 2000);
 
       // Preload the landing page for faster transition
       const link = document.createElement("link");
       link.rel = "prefetch";
-      link.href = "pages/landing_page.html";
+      link.href = "pages/course";
       document.head.appendChild(link);
     </script>
     <script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
