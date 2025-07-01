@@ -1,94 +1,71 @@
 module.exports = {
-  content: [
-    "./pages/*.{html,js}",
-    "./index.html",
-    "./js/*.js"
-  ],
+  content: ["./pages/*.{html,js}", "./index.html"],
   theme: {
     extend: {
       colors: {
-        // Primary Colors
         primary: {
-          50: "#EFF6FF", // blue-50
-          100: "#DBEAFE", // blue-100
-          200: "#BFDBFE", // blue-200
-          300: "#93C5FD", // blue-300
-          400: "#60A5FA", // blue-400
-          500: "#3B82F6", // blue-500
-          600: "#2563EB", // blue-600
-          700: "#1D4ED8", // blue-700
-          800: "#1E3A8A", // blue-800 - Deep academic blue
-          900: "#1E40AF", // blue-900
-          DEFAULT: "#1E3A8A", // blue-800
+          DEFAULT: "#1e3a8a", // blue-800
+          50: "#eff6ff", // blue-50
+          100: "#dbeafe", // blue-100
+          500: "#3b82f6", // blue-500
+          600: "#2563eb", // blue-600
+          700: "#1d4ed8", // blue-700
+          800: "#1e40af", // blue-800
+          900: "#1e3a8a", // blue-900
         },
-        // Secondary Colors
         secondary: {
-          50: "#F5F3FF", // violet-50
-          100: "#EDE9FE", // violet-100
-          200: "#DDD6FE", // violet-200
-          300: "#C4B5FD", // violet-300
-          400: "#A78BFA", // violet-400
-          500: "#8B5CF6", // violet-500
-          600: "#7C3AED", // violet-600 - Sophisticated purple
-          700: "#6D28D9", // violet-700
-          800: "#5B21B6", // violet-800
-          900: "#4C1D95", // violet-900
-          DEFAULT: "#7C3AED", // violet-600
+          DEFAULT: "#7c3aed", // violet-600
+          50: "#f5f3ff", // violet-50
+          100: "#ede9fe", // violet-100
+          500: "#8b5cf6", // violet-500
+          600: "#7c3aed", // violet-600
+          700: "#6d28d9", // violet-700
         },
-        // Accent Colors
         accent: {
-          50: "#FFFBEB", // amber-50
-          100: "#FEF3C7", // amber-100
-          200: "#FDE68A", // amber-200
-          300: "#FCD34D", // amber-300
-          400: "#FBBF24", // amber-400
-          500: "#F59E0B", // amber-500 - Warm amber
-          600: "#D97706", // amber-600
-          700: "#B45309", // amber-700
-          800: "#92400E", // amber-800
-          900: "#78350F", // amber-900
-          DEFAULT: "#F59E0B", // amber-500
+          DEFAULT: "#f59e0b", // amber-500
+          50: "#fffbeb", // amber-50
+          100: "#fef3c7", // amber-100
+          400: "#fbbf24", // amber-400
+          500: "#f59e0b", // amber-500
+          600: "#d97706", // amber-600
         },
-        // Background Colors
-        background: "#FEFEFE", // white with subtle warmth
-        surface: "#F8FAFC", // slate-50 - Light gray-blue
-        // Text Colors
+        background: "#f9fafb", // gray-50
+        surface: "#ffffff", // white
         text: {
-          primary: "#1F2937", // gray-800 - Rich charcoal
-          secondary: "#6B7280", // gray-500 - Medium gray
+          primary: "#111827", // gray-900
+          secondary: "#6b7280", // gray-500
         },
-        // Status Colors
-        success: "#10B981", // emerald-500 - Fresh green
-        warning: "#F59E0B", // amber-500 - Consistent with accent
-        error: "#EF4444", // red-500 - Clear red
+        success: {
+          DEFAULT: "#10b981", // emerald-500
+          50: "#ecfdf5", // emerald-50
+          100: "#d1fae5", // emerald-100
+        },
+        warning: {
+          DEFAULT: "#f59e0b", // amber-500
+          50: "#fffbeb", // amber-50
+        },
+        error: {
+          DEFAULT: "#ef4444", // red-500
+          50: "#fef2f2", // red-50
+        },
       },
       fontFamily: {
-        sans: ['Source Sans Pro', 'sans-serif'],
-        heading: ['Inter', 'sans-serif'],
-        caption: ['Inter', 'sans-serif'],
-        data: ['JetBrains Mono', 'monospace'],
+        sans: ['Inter', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        cairo: ['Cairo', 'sans-serif'],
       },
       fontSize: {
-        'xs': ['0.75rem', { lineHeight: '1rem' }],
-        'sm': ['0.875rem', { lineHeight: '1.25rem' }],
-        'base': ['1rem', { lineHeight: '1.6rem' }],
-        'lg': ['1.125rem', { lineHeight: '1.75rem' }],
-        'xl': ['1.25rem', { lineHeight: '1.75rem' }],
-        '2xl': ['1.5rem', { lineHeight: '2rem' }],
-        '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
-        '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
-        '5xl': ['3rem', { lineHeight: '1.3' }],
-        '6xl': ['3.75rem', { lineHeight: '1.3' }],
+        'hero': ['3.5rem', { lineHeight: '1.1', fontWeight: '700' }],
+        'section-title': ['2.5rem', { lineHeight: '1.2', fontWeight: '600' }],
+        'card-title': ['1.5rem', { lineHeight: '1.3', fontWeight: '600' }],
       },
       boxShadow: {
-        'subtle': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-        'elevation': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-        'interactive': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+        'card-hover': '0 6px 8px -1px rgba(0, 0, 0, 0.15)',
       },
       animation: {
-        'fade-in': 'fadeIn 300ms ease-out',
-        'slide-up': 'slideUp 300ms ease-out',
-        'scale-in': 'scaleIn 200ms ease-out',
+        'fade-in': 'fadeIn 0.6s ease-in-out',
+        'slide-up': 'slideUp 0.5s ease-out',
       },
       keyframes: {
         fadeIn: {
@@ -96,37 +73,9 @@ module.exports = {
           '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
         },
-        scaleIn: {
-          '0%': { opacity: '0', transform: 'scale(0.95)' },
-          '100%': { opacity: '1', transform: 'scale(1)' },
-        },
-      },
-      transitionDuration: {
-        '200': '200ms',
-        '300': '300ms',
-      },
-      transitionTimingFunction: {
-        'out': 'ease-out',
-      },
-      scale: {
-        '102': '1.02',
-        '105': '1.05',
-      },
-      spacing: {
-        '18': '4.5rem',
-        '88': '22rem',
-        '128': '32rem',
-      },
-      borderRadius: {
-        'xl': '0.75rem',
-        '2xl': '1rem',
-      },
-      maxHeight: {
-        '0': '0',
-        '1000': '1000px',
       },
     },
   },

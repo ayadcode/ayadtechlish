@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ayadtechlish</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fayadtechli2927back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"
+    ></script>
+  </head>
+  <body class="bg-background text-text-primary font-cairo">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <svg
+              class="w-10 h-10 text-primary"
+              viewBox="0 0 40 40"
+              fill="currentColor"
+            >
+              <rect
+                x="4"
+                y="8"
+                width="32"
+                height="24"
+                rx="4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path d="M8 16h6v2H8zm0 4h8v2H8zm0 4h4v2H8z" />
+              <circle cx="26" cy="20" r="6" fill="currentColor" opacity="0.2" />
+              <path
+                d="M23 18l2 2 4-4"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+              />
+            </svg>
+            <span class="ml-3 text-xl font-bold text-primary"
+              >ayadtechlish</span
+            >
+          </div>
+
+          <!-- Language Toggle -->
+          <div class="flex items-center space-x-4">
+            <button
+              id="langToggle"
+              class="lang-toggle flex items-center space-x-2"
+            >
+              <span class="text-sm font-medium" id="langText">English</span>
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
+                />
+              </svg>
+            </button>
+            <a href="#contact" class="btn-primary">تواصل معنا</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5"
+      ></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Arabic Content (Primary) -->
+          <div class="space-y-8 font-cairo" id="heroArabic" dir="rtl">
+            <div class="space-y-4">
+              <h1
+                class="text-4xl lg:text-5xl font-bold text-primary leading-tight"
+              >
+                أتقن الإنجليزية التقنية<br />
+                <span class="text-secondary">وطور مسيرتك المهنية</span>
+              </h1>
+              <p class="text-xl text-text-secondary leading-relaxed">
+                الدورة الشاملة في اللغة الإنجليزية المصممة خصيصاً للمحترفين
+                التقنيين الناطقين بالعربية. اجمع بين التعليم المعتمد من TESOL
+                والخبرة العملية في البرمجة.
+              </p>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="flex flex-wrap items-center gap-6 text-sm">
+              <div class="flex items-center space-x-2">
+                <div class="w-3 h-3 bg-success rounded-full"></div>
+                <span class="font-medium">+500 طالب</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div class="w-3 h-3 bg-accent rounded-full"></div>
+                <span class="font-medium">تركيز على النمو المهني</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                <span class="font-medium">معتمد TESOL</span>
+              </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="#contact" class="btn-primary text-center">
+                ابدأ رحلتك
+              </a>
+              <button
+                class="px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-200"
+              >
+                تقييم مجاني
+              </button>
+            </div>
+          </div>
+
+          <!-- English Content (Hidden by default) -->
+          <div class="space-y-8 hidden" id="heroEnglish" dir="ltr">
+            <div class="space-y-4">
+              <h1
+                class="text-4xl lg:text-5xl font-bold text-primary leading-tight"
+              >
+                Master Technical English,<br />
+                <span class="text-secondary">Advance Your Tech Career</span>
+              </h1>
+              <p class="text-xl text-text-secondary leading-relaxed">
+                The comprehensive English course specifically designed for
+                Arabic-speaking tech professionals. Combine TESOL-certified
+                instruction with real-world programming experience.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-6 text-sm">
+              <div class="flex items-center space-x-2">
+                <div class="w-3 h-3 bg-success rounded-full"></div>
+                <span class="font-medium">500+ Students</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div class="w-3 h-3 bg-accent rounded-full"></div>
+                <span class="font-medium">Career Growth Focus</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                <span class="font-medium">TESOL Certified</span>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="#contact" class="btn-primary text-center">
+                Start Your Journey
+              </a>
+              <button
+                class="px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-200"
+              >
+                Free Assessment
+              </button>
+            </div>
+          </div>
+
+          <!-- Hero Image -->
+          <div class="relative">
+            <div
+              class="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary-100 to-secondary-100"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                alt="محترفون تقنيون يتعلمون الإنجليزية"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+              />
+            </div>
+            <!-- Floating Stats -->
+            <div
+              class="absolute -bottom-6 -left-6 bg-surface rounded-lg p-4 shadow-card"
+            >
+              <div class="text-2xl font-bold text-success">%85</div>
+              <div class="text-sm text-text-secondary">معدل التوظيف</div>
+            </div>
+            <div
+              class="absolute -top-6 -right-6 bg-surface rounded-lg p-4 shadow-card"
+            >
+              <div class="text-2xl font-bold text-accent">محترف</div>
+              <div class="text-sm text-text-secondary">مستوى المهارات</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Statement Section -->
+    <section class="py-20 bg-surface">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl lg:text-4xl font-bold text-primary mb-4"
+            id="problemTitle"
+          >
+            هل تعيق حواجز اللغة تقدمك المهني في التكنولوجيا؟
+          </h2>
+          <p
+            class="text-xl text-text-secondary max-w-3xl mx-auto"
+            id="problemSubtitle"
+          >
+            لا تدع تحديات التواصل تمنعك من الوصول إلى إمكاناتك الكاملة في صناعة
+            التكنولوجيا العالمية.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Problem 1 -->
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 bg-error-50 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-error"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-semibold text-primary mb-3"
+              id="problem1Title"
+            >
+              فشل المقابلات التقنية
+            </h3>
+            <p class="text-text-secondary" id="problem1Text">
+              صعوبة في شرح الخوارزميات المعقدة وتصميم الأنظمة باللغة الإنجليزية
+              أثناء المقابلات الوظيفية الدولية.
+            </p>
+          </div>
+
+          <!-- Problem 2 -->
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 bg-warning-50 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-warning"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16c-.77.833.192 2.5 1.732 2.5z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-semibold text-primary mb-3"
+              id="problem2Title"
+            >
+              فقدان الفرص
+            </h3>
+            <p class="text-text-secondary" id="problem2Text">
+              عدم القدرة على التواصل بفعالية في الاجتماعات والعروض التقديمية،
+              مما يحد من فرص التقدم المهني.
+            </p>
+          </div>
+
+          <!-- Problem 3 -->
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 bg-error-50 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-error"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-semibold text-primary mb-3"
+              id="problem3Title"
+            >
+              محدودية الوصول العالمي
+            </h3>
+            <p class="text-text-secondary" id="problem3Text">
+              فقدان الفرص العالمية للعمل عن بُعد بسبب حواجز التواصل باللغة
+              الإنجليزية.
+            </p>
+          </div>
+        </div>
+
+        <!-- Statistics -->
+        <div
+          class="mt-16 bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8"
+        >
+          <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div class="text-4xl font-bold text-primary mb-2">%73</div>
+              <div class="text-text-secondary" id="stat1Text">
+                من المطورين العرب يعتبرون الإنجليزية أكبر عائق مهني لديهم
+              </div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold text-secondary mb-2">2.5x</div>
+              <div class="text-text-secondary" id="stat2Text">
+                زيادة في الوصول للفرص مع مهارات إنجليزية تقنية قوية
+              </div>
+            </div>
+            <div>
+              <div class="text-4xl font-bold text-accent mb-2">%60</div>
+              <div class="text-text-secondary" id="stat3Text">
+                من الوظائف التقنية الدولية تتطلب إتقان متقدم للإنجليزية
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section class="py-20 bg-background">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Instructor Image -->
+          <div class="relative">
+            <div class="aspect-square rounded-2xl overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                alt="أياد - مدرس معتمد TESOL"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+              />
+            </div>
+            <!-- Credentials Badge -->
+            <div
+              class="absolute -bottom-6 -right-6 bg-surface rounded-lg p-4 shadow-card"
+            >
+              <div class="flex items-center space-x-2">
+                <svg
+                  class="w-6 h-6 text-accent"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+                <span class="font-semibold text-primary">معتمد TESOL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instructor Content -->
+          <div class="space-y-6">
+            <div>
+              <h2
+                class="text-3xl lg:text-4xl font-bold text-primary mb-4"
+                id="instructorTitle"
+              >
+                تعرف على مدربك: محمد عياد
+              </h2>
+              <p class="text-xl text-text-secondary" id="instructorSubtitle">
+                المدرب الوحيد الذي يجمع بين شهادة وخبرة تطوير الواجهات الأمامية
+                الحقيقية.
+              </p>
+            </div>
+
+            <!-- Credentials -->
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-6 h-6 bg-success rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary" id="cred1Title">
+                    مدرب إنجليزية معتمد
+                  </h3>
+                  <p class="text-text-secondary" id="cred1Text">
+                    متخصص في تعليم الإنجليزية للناطقين بلغات أخرى مع خبرة 4+
+                    سنوات
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-6 h-6 bg-success rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary" id="cred2Title">
+                    مطور واجهات أمامية
+                  </h3>
+                  <p class="text-text-secondary" id="cred2Text">
+                    مطور نشط مع خبرة في React وJavaScript وتقنيات الويب الحديثة
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-6 h-6 bg-success rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary" id="cred3Title">
+                    متحدث ثنائي اللغة عربي-إنجليزي
+                  </h3>
+                  <p class="text-text-secondary" id="cred3Text">
+                    فهم أصيل لتحديات التعلم العربية والسياق الثقافي
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-6 h-6 bg-success rounded-full flex items-center justify-center flex-shrink-0 mt-1"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary" id="cred4Title">
+                    +100 طالب تم تدريبهم
+                  </h3>
+                  <p class="text-text-secondary" id="cred4Text">
+                    سجل حافل مؤكد في مساعدة المطورين العرب على تطوير مسيراتهم
+                    المهنية
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quote -->
+            <div
+              class="bg-primary-50 border-l-4 border-primary p-6 rounded-r-lg"
+            >
+              <p class="text-primary italic" id="instructorQuote">
+                "أفهم التحديات الفريدة التي يواجهها الناطقون بالعربية عند تعلم
+                الإنجليزية التقنية لأنني مررت بهذه التجربة بنفسي. هدفي هو سد هذه
+                الفجوة ومساعدتك على التواصل بثقة في أي بيئة تقنية."
+              </p>
+              <div class="mt-4 font-semibold text-primary">
+                - محمد عياد , مدربك
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="py-20 bg-surface">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl lg:text-4xl font-bold text-primary mb-4"
+            id="curriculumTitle"
+          >
+            منهج شامل للإنجليزية التقنية
+          </h2>
+          <p
+            class="text-xl text-text-secondary max-w-3xl mx-auto"
+            id="curriculumSubtitle"
+          >
+            8 وحدات متخصصة مصممة خصيصاً للمحترفين التقنيين، تغطي كل شيء من
+            المفردات التقنية إلى التحضير للمقابلات.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Module 1 -->
+          <div
+            class="card hover:shadow-card-hover transition-all duration-300 cursor-pointer group"
+          >
+            <div
+              class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-primary"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-lg font-semibold text-primary mb-2"
+              id="module1Title"
+            >
+              المفردات التقنية
+            </h3>
+            <p class="text-text-secondary text-sm mb-4" id="module1Text">
+              إتقان 500+ مصطلح برمجي أساسي وأطر عمل ومصطلحات الصناعة
+            </p>
+            <div class="text-xs text-accent font-medium">4 أسابيع • 20 درس</div>
+          </div>
+
+          <!-- Module 2 -->
+          <div
+            class="card hover:shadow-card-hover transition-all duration-300 cursor-pointer group"
+          >
+            <div
+              class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-secondary-200 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-secondary"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-lg font-semibold text-primary mb-2"
+              id="module2Title"
+            >
+              النطق واللهجة
+            </h3>
+            <p class="text-text-secondary text-sm mb-4" id="module2Text">
+              إتقان نطق المصطلحات التقنية وتقليل اللهجة العربية
+            </p>
+            <div class="text-xs text-accent font-medium">3 أسابيع • 15 درس</div>
+          </div>
+
+          <!-- Module 3 -->
+          <div
+            class="card hover:shadow-card-hover transition-all duration-300 cursor-pointer group"
+          >
+            <div
+              class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-accent-200 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-accent"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-lg font-semibold text-primary mb-2"
+              id="module3Title"
+            >
+              كتابة البريد الإلكتروني المهني
+            </h3>
+            <p class="text-text-secondary text-sm mb-4" id="module3Text">
+              كتابة رسائل بريد إلكتروني واضحة ومهنية للزملاء والعملاء والمدراء
+            </p>
+            <div class="text-xs text-accent font-medium">أسبوعان • 10 دروس</div>
+          </div>
+
+          <!-- Module 4 -->
+          <div
+            class="card hover:shadow-card-hover transition-all duration-300 cursor-pointer group"
+          >
+            <div
+              class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-success-200 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-success"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-lg font-semibold text-primary mb-2"
+              id="module4Title"
+            >
+              مهارات الاجتماعات والعروض
+            </h3>
+            <p class="text-text-secondary text-sm mb-4" id="module4Text">
+              المشاركة بثقة في الاجتماعات اليومية والعروض التوضيحية والعروض
+              التقنية
+            </p>
+            <div class="text-xs text-accent font-medium">3 أسابيع • 12 درس</div>
+          </div>
+
+          <!-- Module 5 -->
+          <div
+            class="card hover:shadow-card-hover transition-all duration-300 cursor-pointer group"
+          >
+            <div
+              class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-primary"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-lg font-semibold text-primary mb-2"
+              id="module5Title"
+            >
+              التوثيق التقني
+            </h3>
+            <p class="text-text-secondary text-sm mb-4" id="module5Text">
+              كتابة ملفات README واضحة ووثائق API والمواصفات التقنية
+            </p>
+            <div class="text-xs text-accent font-medium">أسبوعان • 8 دروس</div>
+          </div>
+
+          <!-- Module 6 -->
+          <div
+            class="card hover:shadow-card-hover transition-all duration-300 cursor-pointer group"
+          >
+            <div
+              class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-secondary-200 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-secondary"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-lg font-semibold text-primary mb-2"
+              id="module6Title"
+            >
+              التواصل في مراجعة الكود
+            </h3>
+            <p class="text-text-secondary text-sm mb-4" id="module6Text">
+              تقديم وتلقي ملاحظات بناءة أثناء مراجعات الكود
+            </p>
+            <div class="text-xs text-accent font-medium">أسبوعان • 8 دروس</div>
+          </div>
+
+          <!-- Module 7 -->
+          <div
+            class="card hover:shadow-card-hover transition-all duration-300 cursor-pointer group"
+          >
+            <div
+              class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-accent-200 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-accent"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6m8 0H8"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-lg font-semibold text-primary mb-2"
+              id="module7Title"
+            >
+              التحضير للمقابلات
+            </h3>
+            <p class="text-text-secondary text-sm mb-4" id="module7Text">
+              إتقان المقابلات التقنية والأسئلة السلوكية ومهارات التواصل
+            </p>
+            <div class="text-xs text-accent font-medium">3 أسابيع • 15 درس</div>
+          </div>
+
+          <!-- Module 8 -->
+          <div
+            class="card hover:shadow-card-hover transition-all duration-300 cursor-pointer group"
+          >
+            <div
+              class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-success-200 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-success"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-lg font-semibold text-primary mb-2"
+              id="module8Title"
+            >
+              التطوير المهني
+            </h3>
+            <p class="text-text-secondary text-sm mb-4" id="module8Text">
+              التواصل بفعالية وبناء علاقات مهنية وتطوير مسيرتك المهنية
+            </p>
+            <div class="text-xs text-accent font-medium">أسبوعان • 10 دروس</div>
+          </div>
+        </div>
+
+        <!-- Sample Lesson Preview -->
+        <div
+          class="mt-16 bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8"
+        >
+          <div class="text-center mb-8">
+            <h3 class="text-2xl font-bold text-primary mb-2" id="sampleTitle">
+              معاينة درس تجريبي
+            </h3>
+            <p class="text-text-secondary" id="sampleSubtitle">
+              تذوق نهجنا التعليمي التفاعلي
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Vocabulary Flashcard -->
+            <div class="bg-surface rounded-lg p-6 shadow-card">
+              <h4 class="font-semibold text-primary mb-4">
+                بطاقة المفردات التقنية
+              </h4>
+              <div
+                class="bg-primary text-white rounded-lg p-4 text-center mb-4"
+              >
+                <div class="text-2xl font-bold mb-2">API</div>
+                <div class="text-sm opacity-90">واجهة برمجة التطبيقات</div>
+              </div>
+              <p class="text-text-secondary text-sm">
+                "واجهة برمجة التطبيقات تسمح لتطبيقات البرمجيات المختلفة بالتواصل
+                مع بعضها البعض."
+              </p>
+            </div>
+
+            <!-- Pronunciation Guide -->
+            <div class="bg-surface rounded-lg p-6 shadow-card">
+              <h4 class="font-semibold text-primary mb-4">دليل النطق</h4>
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="font-medium">Algorithm</span>
+                  <button
+                    class="w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="text-sm text-text-secondary">/ˈælɡəˌrɪðəm/</div>
+                <div class="text-xs text-accent">
+                  خطأ شائع: تجنب نطق 'th' كما في العربية
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="py-20 bg-background">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl lg:text-4xl font-bold text-primary mb-4"
+            id="successTitle"
+          >
+            قصص نجاح الطلاب
+          </h2>
+          <p
+            class="text-xl text-text-secondary max-w-3xl mx-auto"
+            id="successSubtitle"
+          >
+            نتائج حقيقية من المطورين الناطقين بالعربية الذين حولوا مسيراتهم
+            المهنية معayadtechlish.
+          </p>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="grid md:grid-cols-4 gap-8 mb-16">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-success mb-2">+500</div>
+            <div class="text-text-secondary">طالب تخرج</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-accent mb-2">%95</div>
+            <div class="text-text-secondary">نمو مهني</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-secondary mb-2">%85</div>
+            <div class="text-text-secondary">فرص دولية</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-primary mb-2">%100</div>
+            <div class="text-text-secondary">رضا الطلاب</div>
+          </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="card">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                alt="أحمد حسن"
+                class="w-12 h-12 rounded-full object-cover mr-4"
+                loading="lazy"
+                onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+              />
+              <div>
+                <div class="font-semibold text-primary">أحمد حسن</div>
+                <div class="text-sm text-text-secondary">
+                  مطور واجهات أمامية
+                </div>
+              </div>
+            </div>
+            <p class="text-text-secondary mb-4">
+              "بعد إكمال أياد تك إنجليش، حصلت على وظيفة عن بُعد مع شركة ناشئة
+              أمريكية. تحسنت مهاراتي في التواصل بشكل كبير وأصبحت أقود المناقشات
+              التقنية مع الفرق الدولية بثقة."
+            </p>
+            <div class="flex items-center text-sm text-accent">
+              <span class="font-medium">التأثير:</span>
+              <span class="ml-2">وظيفة دولية عن بُعد</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="card">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                alt="فاطمة الزهراء"
+                class="w-12 h-12 rounded-full object-cover mr-4"
+                loading="lazy"
+                onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+              />
+              <div>
+                <div class="font-semibold text-primary">فاطمة الزهراء</div>
+                <div class="text-sm text-text-secondary">مطور فول ستاك</div>
+              </div>
+            </div>
+            <p class="text-text-secondary mb-4">
+              "ساعدتني الدورة في التغلب على خوفي من التحدث في الاجتماعات
+              التقنية. تمت ترقيتي إلى قائد فريق خلال 6 أشهر من إكمال البرنامج."
+            </p>
+            <div class="flex items-center text-sm text-success">
+              <span class="font-medium">الإنجاز:</span>
+              <span class="ml-2">ترقية إلى قائد فريق</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="card">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                alt="عمر خليل"
+                class="w-12 h-12 rounded-full object-cover mr-4"
+                loading="lazy"
+                onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
+              />
+              <div>
+                <div class="font-semibold text-primary">عمر خليل</div>
+                <div class="text-sm text-text-secondary">مهندس DevOps</div>
+              </div>
+            </div>
+            <p class="text-text-secondary mb-4">
+              "منحني أياد تك إنجليش الثقة للتقدم للوظائف الدولية. أعمل الآن
+              لشركة تقنية ألمانية ومهاراتي في التوثيق يشيد بها زملائي."
+            </p>
+            <div class="flex items-center text-sm text-secondary">
+              <span class="font-medium">النجاح:</span>
+              <span class="ml-2">وظيفة تقنية دولية</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Company Logos -->
+        <div class="mt-16 text-center">
+          <h3 class="text-xl font-semibold text-primary mb-8">
+            خريجونا يعملون الآن في:
+          </h3>
+          <div
+            class="flex flex-wrap justify-center items-center gap-8 opacity-60"
+          >
+            <div class="text-2xl font-bold text-gray-400">Microsoft</div>
+            <div class="text-2xl font-bold text-gray-400">Google</div>
+            <div class="text-2xl font-bold text-gray-400">Amazon</div>
+            <div class="text-2xl font-bold text-gray-400">Meta</div>
+            <div class="text-2xl font-bold text-gray-400">Netflix</div>
+            <div class="text-2xl font-bold text-gray-400">Spotify</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 contact-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl lg:text-4xl font-bold text-primary mb-4"
+            id="contactTitle"
+          >
+            مستعد لتحويل مسيرتك المهنية؟
+          </h2>
+          <p
+            class="text-xl text-text-secondary max-w-3xl mx-auto"
+            id="contactSubtitle"
+          >
+            تواصل معنا لبدء رحلتك نحو إتقان الإنجليزية التقنية
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h3 class="text-2xl font-bold text-primary mb-6">
+              معلومات التواصل
+            </h3>
+
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6 text-primary"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary">البريد الإلكتروني</h4>
+                  <p class="text-text-secondary">info@ayadtechlish.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6 text-secondary"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary">الهاتف</h4>
+                  <p class="text-text-secondary">+966 50 123 4567</p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6 text-accent"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary">ساعات الدعم</h4>
+                  <p class="text-text-secondary">الأحد-الخميس: 9ص-6م (GMT+3)</p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6 text-success"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary">وقت الاستجابة</h4>
+                  <p class="text-text-secondary">خلال 24 ساعة</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="mt-8">
+              <h4 class="font-semibold text-primary mb-4">تابعنا</h4>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary-700 transition-colors"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-white hover:bg-secondary-700 transition-colors"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white hover:bg-accent-600 transition-colors"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.222.083.343-.09.38-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Form -->
+          <div class="google-form-container">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-primary mb-4">
+                أرسل لنا رسالة
+              </h3>
+              <p class="text-text-secondary mb-6">
+                املأ النموذج أدناه وسنرد عليك خلال 24 ساعة.
+              </p>
+            </div>
+
+            <!-- Google Form Embed -->
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSd_YourGoogleFormIDHere/viewform?embedded=true"
+              width="100%"
+              height="600"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              style="border-radius: 0 0 16px 16px"
+            >
+              جار التحميل...
+            </iframe>
+
+            <!-- Fallback link if iframe doesn't work -->
+            <div class="p-6 text-center">
+              <p class="text-text-secondary mb-4">
+                لا يتم تحميل النموذج؟ ادخل إليه مباشرة:
+              </p>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_YourGoogleFormIDHere/viewform"
+                target="_blank"
+                class="btn-primary inline-block"
+              >
+                افتح نموذج التواصل
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div class="col-span-2">
+            <div class="flex items-center mb-4">
+              <svg
+                class="w-8 h-8 text-accent"
+                viewBox="0 0 40 40"
+                fill="currentColor"
+              >
+                <rect
+                  x="4"
+                  y="8"
+                  width="32"
+                  height="24"
+                  rx="4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path d="M8 16h6v2H8zm0 4h8v2H8zm0 4h4v2H8z" />
+                <circle
+                  cx="26"
+                  cy="20"
+                  r="6"
+                  fill="currentColor"
+                  opacity="0.2"
+                />
+                <path
+                  d="M23 18l2 2 4-4"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                />
+              </svg>
+              <span class="ml-3 text-2xl font-bold">أياد تك إنجليش</span>
+            </div>
+            <p class="text-primary-100 mb-6 max-w-md">
+              تمكين المحترفين التقنيين الناطقين بالعربية من إتقان التواصل باللغة
+              الإنجليزية وتطوير مسيراتهم المهنية في صناعة التكنولوجيا العالمية.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center hover:bg-accent transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center hover:bg-accent transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center hover:bg-accent transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">روابط سريعة</h3>
+            <ul class="space-y-2 text-primary-100">
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >منهج الدورة</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >قصص النجاح</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >تقييم مجاني</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-accent transition-colors"
+                  >تواصل معنا</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >دعم الطلاب</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">الدعم</h3>
+            <ul class="space-y-2 text-primary-100">
+              <li class="flex items-center">
+                <svg
+                  class="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                info@ayadtechlish.com
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                +966 50 123 4567
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-4 h-4 mr-2 mt-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <div>
+                  <div class="text-sm">الأحد-الخميس: 9ص-6م (GMT+3)</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section-divider my-8"></div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="text-primary-100 text-sm">
+            © 2025 أياد تك إنجليش. جميع الحقوق محفوظة.
+          </div>
+          <div class="flex space-x-6 text-sm text-primary-100 mt-4 md:mt-0">
+            <a href="#" class="hover:text-accent transition-colors"
+              >سياسة الخصوصية</a
+            >
+            <a href="#" class="hover:text-accent transition-colors"
+              >شروط الخدمة</a
+            >
+            <a href="#" class="hover:text-accent transition-colors">الدعم</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Language Toggle Functionality with Arabic as primary
+      let isArabic = true; // Start with Arabic as primary
+
+      const translations = {
+        ar: {
+          nav: {
+            contact: "تواصل معنا",
+            langText: "English",
+          },
+          hero: {
+            title1: "أتقن الإنجليزية التقنية",
+            title2: "وطور مسيرتك المهنية",
+            description:
+              "الدورة الشاملة في اللغة الإنجليزية المصممة خصيصاً للمحترفين التقنيين الناطقين بالعربية. اجمع بين التعليم المعتمد من TESOL والخبرة العملية في البرمجة.",
+            cta1: "ابدأ رحلتك",
+            cta2: "تقييم مجاني",
+          },
+          problem: {
+            title: "هل تعيق حواجز اللغة تقدمك المهني في التكنولوجيا؟",
+            subtitle:
+              "لا تدع تحديات التواصل تمنعك من الوصول إلى إمكاناتك الكاملة في صناعة التكنولوجيا العالمية.",
+            problem1Title: "فشل المقابلات التقنية",
+            problem1Text:
+              "صعوبة في شرح الخوارزميات المعقدة وتصميم الأنظمة باللغة الإنجليزية أثناء المقابلات الوظيفية الدولية.",
+            problem2Title: "فقدان الفرص",
+            problem2Text:
+              "عدم القدرة على التواصل بفعالية في الاجتماعات والعروض التقديمية، مما يحد من فرص التقدم المهني.",
+            problem3Title: "محدودية الوصول العالمي",
+            problem3Text:
+              "فقدان الفرص العالمية للعمل عن بُعد بسبب حواجز التواصل باللغة الإنجليزية.",
+            stat1Text:
+              "من المطورين العرب يعتبرون الإنجليزية أكبر عائق مهني لديهم",
+            stat2Text: "زيادة في الوصول للفرص مع مهارات إنجليزية تقنية قوية",
+            stat3Text:
+              "من الوظائف التقنية الدولية تتطلب إتقان متقدم للإنجليزية",
+          },
+          instructor: {
+            title: "تعرف على مدربك: أياد",
+            subtitle:
+              "المدرب الوحيد الذي يجمع بين شهادة TESOL وخبرة تطوير الواجهات الأمامية الحقيقية.",
+            cred1Title: "مدرب إنجليزية معتمد TESOL",
+            cred1Text:
+              "متخصص في تعليم الإنجليزية للناطقين بلغات أخرى مع خبرة 5+ سنوات",
+            cred2Title: "مطور واجهات أمامية",
+            cred2Text:
+              "مطور نشط مع خبرة في React وJavaScript وتقنيات الويب الحديثة",
+            cred3Title: "متحدث ثنائي اللغة عربي-إنجليزي",
+            cred3Text: "فهم أصيل لتحديات التعلم العربية والسياق الثقافي",
+            cred4Title: "+500 طالب تم تدريبهم",
+            cred4Text:
+              "سجل حافل مؤكد في مساعدة المطورين العرب على تطوير مسيراتهم المهنية",
+            quote:
+              '"أفهم التحديات الفريدة التي يواجهها الناطقون بالعربية عند تعلم الإنجليزية التقنية لأنني مررت بهذه التجربة بنفسي. هدفي هو سد هذه الفجوة ومساعدتك على التواصل بثقة في أي بيئة تقنية."',
+          },
+          curriculum: {
+            title: "منهج شامل للإنجليزية التقنية",
+            subtitle:
+              "8 وحدات متخصصة مصممة خصيصاً للمحترفين التقنيين، تغطي كل شيء من المفردات التقنية إلى التحضير للمقابلات.",
+            module1Title: "المفردات التقنية",
+            module1Text:
+              "إتقان 500+ مصطلح برمجي أساسي وأطر عمل ومصطلحات الصناعة",
+            module2Title: "النطق واللهجة",
+            module2Text: "إتقان نطق المصطلحات التقنية وتقليل اللهجة العربية",
+            module3Title: "كتابة البريد الإلكتروني المهني",
+            module3Text:
+              "كتابة رسائل بريد إلكتروني واضحة ومهنية للزملاء والعملاء والمدراء",
+            module4Title: "مهارات الاجتماعات والعروض",
+            module4Text:
+              "المشاركة بثقة في الاجتماعات اليومية والعروض التوضيحية والعروض التقنية",
+            module5Title: "التوثيق التقني",
+            module5Text:
+              "كتابة ملفات README واضحة ووثائق API والمواصفات التقنية",
+            module6Title: "التواصل في مراجعة الكود",
+            module6Text: "تقديم وتلقي ملاحظات بناءة أثناء مراجعات الكود",
+            module7Title: "التحضير للمقابلات",
+            module7Text:
+              "إتقان المقابلات التقنية والأسئلة السلوكية ومهارات التواصل",
+            module8Title: "التطوير المهني",
+            module8Text:
+              "التواصل بفعالية وبناء علاقات مهنية وتطوير مسيرتك المهنية",
+            sampleTitle: "معاينة درس تجريبي",
+            sampleSubtitle: "تذوق نهجنا التعليمي التفاعلي",
+          },
+          success: {
+            title: "قصص نجاح الطلاب",
+            subtitle:
+              "نتائج حقيقية من المطورين الناطقين بالعربية الذين حولوا مسيراتهم المهنية مع أياد تك إنجليش.",
+          },
+          contact: {
+            title: "مستعد لتحويل مسيرتك المهنية؟",
+            subtitle: "تواصل معنا لبدء رحلتك نحو إتقان الإنجليزية التقنية",
+          },
+        },
+        en: {
+          nav: {
+            contact: "Contact Us",
+            langText: "العربية",
+          },
+          hero: {
+            title1: "Master Technical English,",
+            title2: "Advance Your Tech Career",
+            description:
+              "The comprehensive English course specifically designed for Arabic-speaking tech professionals. Combine TESOL-certified instruction with real-world programming experience.",
+            cta1: "Start Your Journey",
+            cta2: "Free Assessment",
+          },
+          problem: {
+            title: "Are Language Barriers Holding Back Your Tech Career?",
+            subtitle:
+              "Don't let communication challenges prevent you from reaching your full potential in the global tech industry.",
+            problem1Title: "Failed Technical Interviews",
+            problem1Text:
+              "Struggling to explain complex algorithms and system designs in English during international job interviews.",
+            problem2Title: "Missed Opportunities",
+            problem2Text:
+              "Unable to communicate effectively in meetings and presentations, limiting career advancement opportunities.",
+            problem3Title: "Limited Global Access",
+            problem3Text:
+              "Missing out on international remote opportunities due to English communication barriers.",
+            stat1Text:
+              "of Arabic developers report English as their biggest career barrier",
+            stat2Text:
+              "higher opportunity access with strong technical English skills",
+            stat3Text:
+              "of international tech roles require advanced English proficiency",
+          },
+          instructor: {
+            title: "Meet Your Instructor: Ayad",
+            subtitle:
+              "The only instructor who combines TESOL certification with real-world frontend development experience.",
+            cred1Title: "TESOL Certified English Instructor",
+            cred1Text:
+              "Specialized in teaching English to speakers of other languages with 5+ years experience",
+            cred2Title: "Frontend Developer",
+            cred2Text:
+              "Active developer with expertise in React, JavaScript, and modern web technologies",
+            cred3Title: "Bilingual Arabic-English Speaker",
+            cred3Text:
+              "Native understanding of Arabic learning challenges and cultural context",
+            cred4Title: "500+ Students Taught",
+            cred4Text:
+              "Proven track record of helping Arabic developers advance their careers",
+            quote:
+              '"I understand the unique challenges Arabic speakers face when learning technical English because I\'ve been there myself. My goal is to bridge that gap and help you communicate confidently in any tech environment."',
+          },
+          curriculum: {
+            title: "Comprehensive Technical English Curriculum",
+            subtitle:
+              "8 specialized modules designed specifically for tech professionals, covering everything from technical vocabulary to interview preparation.",
+            module1Title: "Technical Vocabulary",
+            module1Text:
+              "Master 500+ essential programming terms, frameworks, and industry jargon",
+            module2Title: "Pronunciation & Accent",
+            module2Text:
+              "Perfect your pronunciation of technical terms and reduce Arabic accent",
+            module3Title: "Professional Email Writing",
+            module3Text:
+              "Write clear, professional emails to colleagues, clients, and managers",
+            module4Title: "Meeting & Presentation Skills",
+            module4Text:
+              "Confidently participate in standups, demos, and technical presentations",
+            module5Title: "Technical Documentation",
+            module5Text:
+              "Write clear README files, API docs, and technical specifications",
+            module6Title: "Code Review Communication",
+            module6Text:
+              "Give and receive constructive feedback during code reviews",
+            module7Title: "Interview Preparation",
+            module7Text:
+              "Master technical interviews, behavioral questions, and communication skills",
+            module8Title: "Career Advancement",
+            module8Text:
+              "Network effectively, build professional relationships, and grow your career",
+            sampleTitle: "Sample Lesson Preview",
+            sampleSubtitle: "Get a taste of our interactive learning approach",
+          },
+          success: {
+            title: "Student Success Stories",
+            subtitle:
+              "Real results from Arabic-speaking developers who transformed their careers with AyadTechlish.",
+          },
+          contact: {
+            title: "Ready to Transform Your Career?",
+            subtitle:
+              "Get in touch with us to start your journey towards technical English mastery",
+          },
+        },
+      };
+
+      document
+        .getElementById("langToggle")
+        .addEventListener("click", function () {
+          const heroEnglish = document.getElementById("heroEnglish");
+          const heroArabic = document.getElementById("heroArabic");
+          const html = document.documentElement;
+
+          isArabic = !isArabic;
+          const lang = isArabic ? "ar" : "en";
+
+          // Toggle hero sections
+          if (isArabic) {
+            heroEnglish.classList.add("hidden");
+            heroArabic.classList.remove("hidden");
+            html.setAttribute("dir", "rtl");
+            html.setAttribute("lang", "ar");
+            document.body.classList.add("font-cairo");
+          } else {
+            heroEnglish.classList.remove("hidden");
+            heroArabic.classList.add("hidden");
+            html.setAttribute("dir", "ltr");
+            html.setAttribute("lang", "en");
+            document.body.classList.remove("font-cairo");
+          }
+
+          // Update all text content based on current language
+          updateAllContent(lang);
+        });
+
+      function updateAllContent(lang) {
+        const t = translations[lang];
+
+        // Navigation
+        const contactBtn = document.querySelector('a[href="#contact"]');
+        const langText = document.getElementById("langText");
+        if (contactBtn) contactBtn.textContent = t.nav.contact;
+        if (langText) langText.textContent = t.nav.langText;
+
+        // Problem section
+        const problemTitle = document.getElementById("problemTitle");
+        const problemSubtitle = document.getElementById("problemSubtitle");
+        if (problemTitle) problemTitle.textContent = t.problem.title;
+        if (problemSubtitle) problemSubtitle.textContent = t.problem.subtitle;
+
+        // Problem items
+        const problem1Title = document.getElementById("problem1Title");
+        const problem1Text = document.getElementById("problem1Text");
+        const problem2Title = document.getElementById("problem2Title");
+        const problem2Text = document.getElementById("problem2Text");
+        const problem3Title = document.getElementById("problem3Title");
+        const problem3Text = document.getElementById("problem3Text");
+
+        if (problem1Title) problem1Title.textContent = t.problem.problem1Title;
+        if (problem1Text) problem1Text.textContent = t.problem.problem1Text;
+        if (problem2Title) problem2Title.textContent = t.problem.problem2Title;
+        if (problem2Text) problem2Text.textContent = t.problem.problem2Text;
+        if (problem3Title) problem3Title.textContent = t.problem.problem3Title;
+        if (problem3Text) problem3Text.textContent = t.problem.problem3Text;
+
+        // Statistics
+        const stat1Text = document.getElementById("stat1Text");
+        const stat2Text = document.getElementById("stat2Text");
+        const stat3Text = document.getElementById("stat3Text");
+        if (stat1Text) stat1Text.textContent = t.problem.stat1Text;
+        if (stat2Text) stat2Text.textContent = t.problem.stat2Text;
+        if (stat3Text) stat3Text.textContent = t.problem.stat3Text;
+
+        // Instructor section
+        const instructorTitle = document.getElementById("instructorTitle");
+        const instructorSubtitle =
+          document.getElementById("instructorSubtitle");
+        const instructorQuote = document.getElementById("instructorQuote");
+        if (instructorTitle) instructorTitle.textContent = t.instructor.title;
+        if (instructorSubtitle)
+          instructorSubtitle.textContent = t.instructor.subtitle;
+        if (instructorQuote) instructorQuote.textContent = t.instructor.quote;
+
+        // Instructor credentials
+        const cred1Title = document.getElementById("cred1Title");
+        const cred1Text = document.getElementById("cred1Text");
+        const cred2Title = document.getElementById("cred2Title");
+        const cred2Text = document.getElementById("cred2Text");
+        const cred3Title = document.getElementById("cred3Title");
+        const cred3Text = document.getElementById("cred3Text");
+        const cred4Title = document.getElementById("cred4Title");
+        const cred4Text = document.getElementById("cred4Text");
+
+        if (cred1Title) cred1Title.textContent = t.instructor.cred1Title;
+        if (cred1Text) cred1Text.textContent = t.instructor.cred1Text;
+        if (cred2Title) cred2Title.textContent = t.instructor.cred2Title;
+        if (cred2Text) cred2Text.textContent = t.instructor.cred2Text;
+        if (cred3Title) cred3Title.textContent = t.instructor.cred3Title;
+        if (cred3Text) cred3Text.textContent = t.instructor.cred3Text;
+        if (cred4Title) cred4Title.textContent = t.instructor.cred4Title;
+        if (cred4Text) cred4Text.textContent = t.instructor.cred4Text;
+
+        // Curriculum section
+        const curriculumTitle = document.getElementById("curriculumTitle");
+        const curriculumSubtitle =
+          document.getElementById("curriculumSubtitle");
+        if (curriculumTitle) curriculumTitle.textContent = t.curriculum.title;
+        if (curriculumSubtitle)
+          curriculumSubtitle.textContent = t.curriculum.subtitle;
+
+        // Module titles and texts
+        for (let i = 1; i <= 8; i++) {
+          const moduleTitle = document.getElementById(`module${i}Title`);
+          const moduleText = document.getElementById(`module${i}Text`);
+          if (moduleTitle)
+            moduleTitle.textContent = t.curriculum[`module${i}Title`];
+          if (moduleText)
+            moduleText.textContent = t.curriculum[`module${i}Text`];
+        }
+
+        const sampleTitle = document.getElementById("sampleTitle");
+        const sampleSubtitle = document.getElementById("sampleSubtitle");
+        if (sampleTitle) sampleTitle.textContent = t.curriculum.sampleTitle;
+        if (sampleSubtitle)
+          sampleSubtitle.textContent = t.curriculum.sampleSubtitle;
+
+        // Success section
+        const successTitle = document.getElementById("successTitle");
+        const successSubtitle = document.getElementById("successSubtitle");
+        if (successTitle) successTitle.textContent = t.success.title;
+        if (successSubtitle) successSubtitle.textContent = t.success.subtitle;
+
+        // Contact section
+        const contactTitle = document.getElementById("contactTitle");
+        const contactSubtitle = document.getElementById("contactSubtitle");
+        if (contactTitle) contactTitle.textContent = t.contact.title;
+        if (contactSubtitle) contactSubtitle.textContent = t.contact.subtitle;
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fade-in");
+          }
+        });
+      }, observerOptions);
+
+      // Observe all sections for animation
+      document.querySelectorAll("section").forEach((section) => {
+        observer.observe(section);
+      });
+
+      // Enhanced card hover effects
+      document.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-8px)";
+        });
+
+        card.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0)";
+        });
+      });
+
+      // Add some entrance animations when page loads
+      window.addEventListener("load", function () {
+        const hero = document.querySelector("#heroArabic");
+        if (hero) {
+          hero.classList.add("animate-slide-right"); // Changed to slide-right for RTL
+        }
+      });
+    </script>
+    <script
+      id="dhws-dataInjector"
+      src="../public/dhws-data-injector.js"
+    ></script>
+  </body>
+</html>
