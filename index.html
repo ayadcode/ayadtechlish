@@ -1,94 +1,110 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>أياد تك إنجليش - الإنجليزية للمبرمجين</title>
+    <title>ayadtechlish</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
-            font-family: 'Cairo', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            color: white;
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
+        font-family: "Cairo", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: white;
+      }
+
+      .loader-container {
+        text-align: center;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      .logo {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        background: linear-gradient(45deg, #f59e0b, #fbbf24);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .tagline {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+      }
+
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: 4px solid #f59e0b;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 1rem;
+      }
+
+      .loading-text {
+        font-size: 1rem;
+        opacity: 0.8;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
         }
-        
-        .loader-container {
-            text-align: center;
-            animation: fadeIn 0.5s ease-in-out;
+        100% {
+          transform: rotate(360deg);
         }
-        
-        .logo {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            background: linear-gradient(45deg, #f59e0b, #fbbf24);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
         }
-        
-        .tagline {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
+        to {
+          opacity: 1;
+          transform: translateY(0);
         }
-        
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top: 4px solid #f59e0b;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 1rem;
-        }
-        
-        .loading-text {
-            font-size: 1rem;
-            opacity: 0.8;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+      }
     </style>
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fayadtechli2927back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
-</head>
-<body>
+    <script
+      type="module"
+      src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fayadtechli2927back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"
+    ></script>
+  </head>
+  <body>
     <div class="loader-container">
-        <div class="logo">أياد تك إنجليش</div>
-        <div class="tagline">الإنجليزية للمبرمجين</div>
-        <div class="spinner"></div>
-        <div class="loading-text">جاري تحميل تحولك المهني...</div>
+      <div class="logo">ayadtechlish</div>
+      <div class="tagline">الإنجليزية للمبرمجين</div>
+      <div class="spinner"></div>
+      <div class="loading-text">جاري تحميل تحولك المهني...</div>
     </div>
 
     <script>
-        // Redirect to landing page after 2 seconds
-        setTimeout(function() {
-            window.location.href = 'pages/landing_page.html';
-        }, 2000);
-        
-        // Preload the landing page for faster transition
-        const link = document.createElement('link');
-        link.rel = 'prefetch';
-        link.href = 'pages/landing_page.html';
-        document.head.appendChild(link);
+      // Redirect to landing page after 2 seconds
+      setTimeout(function () {
+        window.location.href = "pages/landing_page.html";
+      }, 2000);
+
+      // Preload the landing page for faster transition
+      const link = document.createElement("link");
+      link.rel = "prefetch";
+      link.href = "pages/landing_page.html";
+      document.head.appendChild(link);
     </script>
-<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
-</body>
+    <script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+  </body>
 </html>
