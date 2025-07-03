@@ -16,10 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <script
-      type="module"
-      src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fayadtechli2927back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"
-    ></script>
   </head>
   <body class="bg-background text-text-primary font-cairo">
     <!-- Navigation Header -->
@@ -113,7 +109,7 @@
             <div class="flex flex-wrap items-center gap-6 text-sm">
               <div class="flex items-center space-x-2">
                 <div class="w-3 h-3 bg-success rounded-full"></div>
-                <span class="px-4 font-medium"> +100 طالب</span>
+                <span class="px-4 font-medium"> +50 طالب</span>
               </div>
               <div class="flex items-center space-x-2">
                 <div class="w-3 h-3 bg-accent rounded-full"></div>
@@ -133,7 +129,7 @@
               <button
                 class="px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-200"
               >
-                تقييم مجاني
+                <a href="#course">إكتشف خياراتك</a>
               </button>
             </div>
           </div>
@@ -505,10 +501,10 @@
                 </div>
                 <div>
                   <h3 class="font-semibold text-primary" id="cred4Title">
-                    أكثر من 100 متعلم استفادوا
+                    أكثر من 50 متعلم استفادوا
                   </h3>
                   <p class="text-text-secondary" id="cred4Text">
-                    ساعدت أكثر من 100 متعلم عربي في تطوير مهاراتهم التقنية
+                    ساعدت أكثر من 50 متعلم عربي في تطوير مهاراتهم التقنية
                     واللغوية، والوصول إلى فرص مهنية أفضل.
                   </p>
                 </div>
@@ -534,7 +530,7 @@
     </section>
 
     <!-- Curriculum Section -->
-    <section class="py-20 bg-surface">
+    <section id="course" class="py-20 bg-surface">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2
@@ -931,83 +927,91 @@
           <div class="card">
             <div class="flex items-center mb-4">
               <img
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                src="../imgs/mahmoud.jpeg"
                 alt="أحمد حسن"
                 class="w-12 h-12 rounded-full object-cover mr-4"
                 loading="lazy"
                 onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
               />
-              <div>
-                <div class="font-semibold text-primary">أحمد حسن</div>
-                <div class="text-sm text-text-secondary">
-                  مطور واجهات أمامية
-                </div>
+              <div class="px-4">
+                <div class="font-semibold text-primary">Mahmoud Ibrahim</div>
+                <div class="text-sm text-text-secondary">Software Engineer</div>
               </div>
             </div>
             <p class="text-text-secondary mb-4">
-              "بعد إكمال أياد تك إنجليش، حصلت على وظيفة عن بُعد مع شركة ناشئة
-              أمريكية. تحسنت مهاراتي في التواصل بشكل كبير وأصبحت أقود المناقشات
-              التقنية مع الفرق الدولية بثقة."
+              "الكورس ده مختلف عن أي كورس إنجليزي خدتُه قبل كده، لأنه بيخاطب
+              المبرمج بشكل مباشر. كل مثال كان واقعي ومربوط بالشغل اليومي. حسيت
+              إن مستوايا في التواصل مع العميل والتيم اتطور جدًا، وده فرق معايا
+              في المقابلات كمان."
             </p>
-            <div class="flex items-center text-sm text-accent">
+            <!-- <div class="flex items-center text-sm text-accent">
               <span class="font-medium">التأثير:</span>
               <span class="ml-2">وظيفة دولية عن بُعد</span>
-            </div>
+            </div> -->
           </div>
 
           <!-- Testimonial 2 -->
           <div class="card">
             <div class="flex items-center mb-4">
               <img
-                src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                src="../imgs/hamamo.jpeg"
                 alt="فاطمة الزهراء"
                 class="w-12 h-12 rounded-full object-cover mr-4"
                 loading="lazy"
                 onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
               />
-              <div>
-                <div class="font-semibold text-primary">فاطمة الزهراء</div>
-                <div class="text-sm text-text-secondary">مطور فول ستاك</div>
+              <div class="px-4">
+                <div class="font-semibold text-primary">Ahmed Hamamo</div>
+                <div class="text-sm text-text-secondary">
+                  Fullstack Developer
+                </div>
               </div>
             </div>
             <p class="text-text-secondary mb-4">
-              "ساعدتني الدورة في التغلب على خوفي من التحدث في الاجتماعات
-              التقنية. تمت ترقيتي إلى قائد فريق خلال 6 أشهر من إكمال البرنامج."
+              "أنا اتعلمت من الكورس حاجات كان نفسي أعرفها من زمان. الكلام
+              التقني، طريقة التواصل في الريفيوهات، وحتى شرح الكود بالإنجليزي –
+              كلها بقت أسهل. اللي يميز الكورس فعلًا إنه معمول بعيون مبرمج فاهم
+              إحنا بنحتاج إيه. تجربة قوية وأنصح بيها أي Fullstack أو حتى
+              Junior."
             </p>
-            <div class="flex items-center text-sm text-success">
+            <!-- <div class="flex items-center text-sm text-success">
               <span class="font-medium">الإنجاز:</span>
               <span class="ml-2">ترقية إلى قائد فريق</span>
-            </div>
+            </div> -->
           </div>
 
           <!-- Testimonial 3 -->
           <div class="card">
             <div class="flex items-center mb-4">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
-                alt="عمر خليل"
+                src="../imgs/zohir.jpeg"
+                alt="Ahmed Zohir"
                 class="w-12 h-12 rounded-full object-cover mr-4"
                 loading="lazy"
                 onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;"
               />
-              <div>
-                <div class="font-semibold text-primary">عمر خليل</div>
-                <div class="text-sm text-text-secondary">مهندس DevOps</div>
+              <div class="px-4">
+                <div class="font-semibold text-primary">Ahmed Zohir</div>
+                <div class="text-sm text-text-secondary">
+                  Automation Engineer
+                </div>
               </div>
             </div>
             <p class="text-text-secondary mb-4">
-              "منحني أياد تك إنجليش الثقة للتقدم للوظائف الدولية. أعمل الآن
-              لشركة تقنية ألمانية ومهاراتي في التوثيق يشيد بها زملائي."
+              "الكورس ساعدني أفهم وأستخدم مصطلحات تقنية كنت بتلغبط فيها، خصوصًا
+              في شغلي مع التيم. المحتوى منظم، والشرح بسيط، ومناسب تمامًا لأي حد
+              شغال في المجال وعايز يطور لغته بطريقة عملية مش أكاديمية. حسيت إن
+              الكورس معمول مخصوص لناس زينا."
             </p>
-            <div class="flex items-center text-sm text-secondary">
+            <!-- <div class="flex items-center text-sm text-secondary">
               <span class="font-medium">النجاح:</span>
               <span class="ml-2">وظيفة تقنية دولية</span>
-            </div>
+            </div> -->
           </div>
         </div>
 
         <!-- Company Logos -->
-        <div class="mt-16 text-center">
+        <!-- <div class="mt-16 text-center">
           <h3 class="text-xl font-semibold text-primary mb-8">
             خريجونا يعملون الآن في:
           </h3>
@@ -1021,7 +1025,7 @@
             <div class="text-2xl font-bold text-gray-400">Netflix</div>
             <div class="text-2xl font-bold text-gray-400">Spotify</div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -1155,8 +1159,8 @@
               <h4 class="font-semibold text-primary mb-4">تابعنا</h4>
               <div class="flex space-x-4">
                 <a
-                  href="#"
-                  class="ml-3 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary-700 transition-colors"
+                  href="https://www.linkedin.com/in/AyadTechlish/"
+                  class="ml-3 w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors"
                 >
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path
@@ -1165,24 +1169,30 @@
                   </svg>
                 </a>
                 <a
-                  href="#"
-                  class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary-700 transition-colors"
+                  href="https://www.facebook.com/AyadTechlish"
+                  class="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors"
                 >
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                    />
-                  </svg>
+                  <img
+                    class="w-6 h-6"
+                    src="../imgs/facebook.svg"
+                    alt="facebook"
+                  />
                 </a>
                 <a
-                  href="#"
-                  class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white hover:bg-accent-600 transition-colors"
+                  href="https://www.instagram.com/AyadTechlish/"
+                  class="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors"
                 >
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.222.083.343-.09.38-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"
-                    />
-                  </svg>
+                  <img
+                    class="w-6 h-6"
+                    src="../imgs/instagram.svg"
+                    alt="instagram"
+                  />
+                </a>
+                <a
+                  href="https://www.tiktok.com/@Ayad.Techlish"
+                  class="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors"
+                >
+                  <img class="w-6 h-6" src="../imgs/tiktok.svg" alt="tiktok" />
                 </a>
               </div>
             </div>
@@ -1215,7 +1225,7 @@
             <!-- Fallback link if iframe doesn't work -->
             <div class="p-6 text-center">
               <p class="text-text-secondary mb-4">
-                لا يتم تحميل النموذج؟ ادخل إليه مباشرة:
+                النموذج لايعمل؟ ادخل إليه مباشرة:
               </p>
               <a
                 href="https://forms.gle/Fh9bLQ4gusJcHFo5A"
@@ -1237,36 +1247,6 @@
           <!-- Company Info -->
           <div class="col-span-2">
             <div class="flex items-center mb-4">
-              <svg
-                class="w-8 h-8 text-accent"
-                viewBox="0 0 40 40"
-                fill="currentColor"
-              >
-                <rect
-                  x="4"
-                  y="8"
-                  width="32"
-                  height="24"
-                  rx="4"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                />
-                <path d="M8 16h6v2H8zm0 4h8v2H8zm0 4h4v2H8z" />
-                <circle
-                  cx="26"
-                  cy="20"
-                  r="6"
-                  fill="currentColor"
-                  opacity="0.2"
-                />
-                <path
-                  d="M23 18l2 2 4-4"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  fill="none"
-                />
-              </svg>
               <span class="ml-3 text-2xl font-bold">AyadTechlish</span>
             </div>
             <p class="text-primary-100 mb-6 max-w-md">
@@ -1275,18 +1255,8 @@
             </p>
             <div class="flex space-x-4">
               <a
-                href="#"
-                class="ml-3 w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center hover:bg-accent transition-colors"
-              >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center hover:bg-accent transition-colors"
+                href="https://www.linkedin.com/in/AyadTechlish/"
+                class="ml-3 w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center text-white hover:bg-accent transition-colors"
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path
@@ -1295,14 +1265,30 @@
                 </svg>
               </a>
               <a
-                href="#"
-                class="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center hover:bg-accent transition-colors"
+                href="https://www.facebook.com/AyadTechlish"
+                class="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center text-white hover:bg-accent transition-colors"
               >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                  />
-                </svg>
+                <img
+                  class="w-6 h-6"
+                  src="../imgs/facebook.svg"
+                  alt="facebook"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/AyadTechlish/"
+                class="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center text-white hover:bg-accent transition-colors"
+              >
+                <img
+                  class="w-6 h-6"
+                  src="../imgs/instagram.svg"
+                  alt="instagram"
+                />
+              </a>
+              <a
+                href="https://www.tiktok.com/@Ayad.Techlish"
+                class="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center text-white hover:bg-accent transition-colors"
+              >
+                <img class="w-6 h-6" src="../imgs/tiktok.svg" alt="tiktok" />
               </a>
             </div>
           </div>
@@ -1322,8 +1308,8 @@
                 >
               </li>
               <li>
-                <a href="#" class="hover:text-accent transition-colors"
-                  >تقييم مجاني</a
+                <a href="#course" class="hover:text-accent transition-colors"
+                  >إكتشف خياراتك</a
                 >
               </li>
               <li>
@@ -1331,11 +1317,11 @@
                   >تواصل معنا</a
                 >
               </li>
-              <li>
-                <a href="#" class="hover:text-accent transition-colors"
+              <!-- <li>
+                <a href="#contact" class="hover:text-accent transition-colors"
                   >دعم الطلاب</a
                 >
-              </li>
+              </li> -->
             </ul>
           </div>
 
@@ -1401,7 +1387,10 @@
 
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="text-primary-100 text-sm">
-            <p>© <span id="year"></span> AyadTechlish جميع الحقوق محفوظة.</p>
+            <p>
+              © <span id="year"></span>
+              AyadTechlish جميع الحقوق محفوظة.
+            </p>
           </div>
           <div class="flex space-x-6 text-sm text-primary-100 mt-4 md:mt-0">
             <a href="#" class="px-4 hover:text-accent transition-colors">
